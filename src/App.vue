@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <Greeting></Greeting>
+    <submit-button/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -30,3 +32,11 @@
   color: #42b983;
 }
 </style>
+<script>
+  import Greeting from '@/components/Greeting.vue'
+  import SubmitButton from "./components/SubmitButton";
+
+  export default {
+    components: {Greeting,SubmitButton}
+  }
+</script>
